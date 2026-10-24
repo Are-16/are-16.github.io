@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b4f9e"/>
+      <stop offset="35%" stop-color="#8a6fc4"/>
+      <stop offset="62%" stop-color="#f2929b"/>
+      <stop offset="82%" stop-color="#ffc98d"/>
+      <stop offset="100%" stop-color="#fff2d9"/>
+    </linearGradient>
+    <radialGradient id="duskSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffdf2" stop-opacity="0.98"/>
+      <stop offset="30%" stop-color="#ffd9a0" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffd9a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="duskHaze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe7cf" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffe7cf" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="duskSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#dusk)"/>
+
+  <!-- setting sun -->
+  <circle cx="1240" cy="760" r="380" fill="url(#duskSun)"/>
+  <circle cx="1240" cy="760" r="86" fill="#fff7e2"/>
+
+  <!-- high clouds -->
+  <g fill="#ffe1ee" opacity="0.5" filter="url(#duskSoft)">
+    <ellipse cx="400" cy="260" rx="260" ry="46"/>
+    <ellipse cx="1460" cy="210" rx="300" ry="40"/>
+    <ellipse cx="980" cy="360" rx="220" ry="34"/>
+  </g>
+
+  <!-- cloud banks -->
+  <g fill="#ffd8e2">
+    <g opacity="0.72">
+      <ellipse cx="360" cy="620" rx="280" ry="58"/>
+      <ellipse cx="520" cy="590" rx="160" ry="64"/>
+      <ellipse cx="220" cy="600" rx="150" ry="50"/>
+    </g>
+    <g opacity="0.62">
+      <ellipse cx="1640" cy="540" rx="260" ry="50"/>
+      <ellipse cx="1500" cy="520" rx="140" ry="46"/>
+    </g>
+  </g>
+
+  <!-- long sunset clouds -->
+  <g fill="#c98fbf" opacity="0.45" filter="url(#duskSoft)">
+    <ellipse cx="720" cy="460" rx="420" ry="26"/>
+    <ellipse cx="1180" cy="520" rx="360" ry="22"/>
+    <ellipse cx="520" cy="380" rx="260" ry="18"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#5c4b77" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M700 420 q18 -16 36 0 q18 -16 36 0"/>
+    <path d="M812 386 q14 -12 28 0 q14 -12 28 0"/>
+    <path d="M900 450 q10 -8 20 0 q10 -8 20 0"/>
+  </g>
+
+  <!-- hills -->
+  <path d="M0 940 Q260 870 520 930 T1040 920 T1560 940 T1920 900 V1080 H0 Z" fill="#6f5d94" opacity="0.6"/>
+  <path d="M0 1000 Q320 940 640 990 T1280 985 T1920 960 V1080 H0 Z" fill="#4e4373" opacity="0.65"/>
+  <rect y="780" width="1920" height="300" fill="url(#duskHaze)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="280" cy="140" r="3"/>
+    <circle cx="620" cy="90" r="2"/>
+    <circle cx="1600" cy="120" r="3"/>
+    <circle cx="1750" cy="260" r="2"/>
+    <circle cx="120" cy="300" r="2"/>
+  </g>
+</svg>

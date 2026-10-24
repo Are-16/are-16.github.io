@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1636"/>
+      <stop offset="42%" stop-color="#1e3a6e"/>
+      <stop offset="72%" stop-color="#3f6fa8"/>
+      <stop offset="100%" stop-color="#b9d9f2"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="22%" stop-color="#e8f3ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#e8f3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f2f8ff"/>
+      <stop offset="100%" stop-color="#dbe9fb"/>
+    </radialGradient>
+    <linearGradient id="nightHaze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfe6ff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#cfe6ff" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="nightSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#night)"/>
+
+  <!-- milky way -->
+  <g opacity="0.28" filter="url(#nightSoft)">
+    <ellipse cx="980" cy="420" rx="760" ry="130" fill="#9fc8ff" transform="rotate(-18 980 420)"/>
+    <ellipse cx="1080" cy="460" rx="520" ry="70" fill="#d9e9ff" transform="rotate(-18 1080 460)"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <g opacity="0.9">
+      <circle cx="180" cy="120" r="2.6"/><circle cx="320" cy="220" r="1.8"/>
+      <circle cx="470" cy="90" r="2.2"/><circle cx="640" cy="180" r="1.5"/>
+      <circle cx="780" cy="80" r="2.4"/><circle cx="920" cy="200" r="1.7"/>
+      <circle cx="1080" cy="110" r="2.1"/><circle cx="1220" cy="240" r="1.6"/>
+      <circle cx="1380" cy="130" r="2.5"/><circle cx="1520" cy="260" r="1.8"/>
+      <circle cx="1680" cy="160" r="2.2"/><circle cx="1790" cy="300" r="1.5"/>
+      <circle cx="250" cy="360" r="1.6"/><circle cx="560" cy="330" r="2.0"/>
+      <circle cx="860" cy="380" r="1.4"/><circle cx="1160" cy="360" r="2.2"/>
+      <circle cx="1450" cy="400" r="1.7"/><circle cx="1700" cy="430" r="2.0"/>
+    </g>
+    <g opacity="0.55">
+      <circle cx="120" cy="500" r="1.2"/><circle cx="400" cy="460" r="1.3"/>
+      <circle cx="700" cy="520" r="1.1"/><circle cx="1010" cy="480" r="1.4"/>
+      <circle cx="1300" cy="540" r="1.2"/><circle cx="1580" cy="500" r="1.3"/>
+      <circle cx="1820" cy="560" r="1.1"/>
+    </g>
+  </g>
+
+  <!-- moon -->
+  <circle cx="1480" cy="230" r="240" fill="url(#moonGlow)"/>
+  <circle cx="1480" cy="230" r="78" fill="url(#moon)"/>
+  <g fill="#dce9f8" opacity="0.5">
+    <circle cx="1458" cy="212" r="13"/>
+    <circle cx="1502" cy="250" r="9"/>
+    <circle cx="1470" cy="266" r="6"/>
+  </g>
+
+  <!-- clouds -->
+  <g fill="#dcecff" opacity="0.22" filter="url(#nightSoft)">
+    <ellipse cx="400" cy="640" rx="320" ry="58"/>
+    <ellipse cx="1560" cy="700" rx="300" ry="52"/>
+    <ellipse cx="980" cy="840" rx="420" ry="48"/>
+  </g>
+
+  <!-- shooting star -->
+  <g stroke="#ffffff" stroke-linecap="round" opacity="0.75">
+    <line x1="620" y1="120" x2="760" y2="210" stroke-width="2.5"/>
+    <line x1="760" y1="210" x2="820" y2="248" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- hills -->
+  <path d="M0 950 Q260 880 520 940 T1040 930 T1560 950 T1920 910 V1080 H0 Z" fill="#24406b" opacity="0.72"/>
+  <path d="M0 1010 Q320 950 640 1000 T1280 995 T1920 970 V1080 H0 Z" fill="#152c4d" opacity="0.8"/>
+  <rect y="780" width="1920" height="300" fill="url(#nightHaze)"/>
+
+  <!-- fireflies -->
+  <g fill="#fff6c9" opacity="0.8">
+    <circle cx="360" cy="900" r="4"/>
+    <circle cx="520" cy="960" r="3"/>
+    <circle cx="1420" cy="920" r="4"/>
+    <circle cx="1600" cy="980" r="3"/>
+    <circle cx="980" cy="1000" r="3"/>
+  </g>
+</svg>
